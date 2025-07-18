@@ -38,16 +38,16 @@
     </ul>
 </address>
 
-<button class="burger-btn" type="button">
+<button class="burger-btn" type="button" data-menu-open>
     <svg class="burger-icon" width="24" height="24">
       <use href="./images/icons.svg#icon-burger"></use>
     </svg>
 
 </button>
 </div>
-<div class="mobile-menu">
+<div class="mobile-menu" data-modal>
     <div class="container mobile-menu-container">
-       <button class="mobile-menu-close" type="button"><svg class="mobile-button-icon" width="8" height="8">
+       <button class="mobile-menu-close" type="button" data-menu-close><svg class="mobile-button-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg></button>
     <ul class="mobile-navigation-list">
@@ -56,13 +56,7 @@
           <li class="mobile-navigation-item"><a class="mobile-navigation-link" href="">Contacts</a></li>
     </ul>
  <address class="mobile-contacts">
-        <ul class="mobile-contacts-list">
-          
-          <li class="mobile-contacts-item"><a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="mobile-contacts-item"><a class="mobile-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-      
-        </ul>
-         <address class="mobile-contacts">
+
         <ul class="mobile-contacts-list">
           
           <li class="mobile-contacts-item"><a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -111,7 +105,7 @@
     <section class="hero-banner " id="hero-banner">
     <div class="container hero-container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button class="hero-button" type="button">Order Service</button>
+            <button class="hero-button" type="button" data-leave-review-open>Order Service</button>
             </div>
     </section>
     <section class="benefits" id="benefits">
@@ -401,7 +395,7 @@
     </section>
    </main>
    <footer class="page-footer ">
-<div class="footer-container">
+<div class="footer-container container">
     <div class="footer-logo-content">
     <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
     <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
@@ -439,7 +433,7 @@
                         </li>
                     </ul>
              </div>
-    <div class="footer-form">
+    <div class="footer-form-box">
     <p class="footer-subscribe-text">Subscribe</p>
 <form class="footer-form">
    <label class="footer-form-email" for="customer-email">
@@ -462,9 +456,9 @@
 </div>
 
    </footer>
-   <div class="blackdrop is-open hidden">
+   <div class="blackdrop" data-modal-leave-review>
     <div class="modal-window">
-<button class="blackdrop-button" type="button" aria-label="Close modal">
+<button class="blackdrop-button" type="button" aria-label="Close modal" data-leave-review-close>
     <svg class="close-icon" width="8" height="8">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
@@ -531,8 +525,9 @@
                      <svg class="icon-accept" width="10" height="8">
                   <use href="./images/icons.svg#icon-click"></use>
                 </svg>
-                </span>I accept the terms and conditions of the
-              <a class="link-privacy-modal" href="#">Privacy Policy</a>
+                </span>
+                <span>I accept the terms and conditions of the
+              <a class="link-privacy-modal" href="#">Privacy Policy</a></span>
               </label>
           </div>
 
@@ -541,5 +536,6 @@
 </form>
     </div>
    </div>
+   <script src="./js/script.js" defer></script>
 </body>
 </html>
