@@ -545,7 +545,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
 margin-bottom: 8px;
-text-align: center;
+
 }
 .ourportfolio-list-item-text {
 font-weight: 400;
@@ -553,7 +553,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-text-align: center
+
 }
 
 @media screen and (min-width: 768px) {
@@ -753,6 +753,9 @@ background-color: #31d0aa;
 
 .footer-social-link:hover {
 background-color: #31d0aa;
+}
+.footer-form-box{
+    gap: 0;
 }
 }         
 /* mobile-menu start */
